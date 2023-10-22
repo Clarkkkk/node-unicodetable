@@ -17,6 +17,7 @@
     "node": ">= 0.8.x"
   },
   "scripts": {
+    "bump": "node ./bump.js",
     "download": "curl \"https://unicode.org/Public/14.0.0/ucd/UnicodeData.txt\" > UnicodeData.txt",
     "generate": "node generate.js",
     "test": "node test.js",
@@ -24,7 +25,12 @@
   },
   "devDependencies": {
     "bufferstream": ">= 0.6.2",
-    "np": "2.13.1"
+    "detect-indent": "^6.1.0",
+    "detect-newline": "^3.1.0",
+    "np": "2.13.1",
+    "npm-run-all": "^4.1.5",
+    "stringify-package": "^1.0.1",
+    "yargs-parser": "^21.1.1"
   },
   "license": "MIT"
 }
